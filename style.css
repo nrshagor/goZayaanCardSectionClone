@@ -30,9 +30,10 @@ section {
 
 .card-middle {
   background-color: rgb(255, 255, 255);
-  width: 1110px;
+  width: 1180px;
   height: 192px;
   border-radius: 20px;
+  padding: 30px;
 }
 .card-middle-top {
   display: flex;
@@ -48,6 +49,13 @@ section {
   align-items: center;
   gap: 0px;
 }
+.card-middle-bottom-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: -10px;
+}
 .card-bottom button {
   border: 0;
   background-color: #fccd03;
@@ -58,16 +66,25 @@ section {
   font-weight: 700;
   bottom: 0;
   outline: none;
+  position: relative;
+  bottom: 25px;
 }
 .box-1 {
-  width: 300px;
-  border: 1px solid black;
+  width: 280px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  border: 1px solid #dbdde0;
+}
+.box-1 p {
+  font-size: 12px;
+  padding: 5px;
+  margin: 0px;
 }
 .box-2 {
   display: flex !important;
   padding: 8px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid #dbdde0;
   z-index: 1;
   height: 24px;
   width: 24px;
@@ -79,8 +96,74 @@ section {
   justify-content: center;
   align-items: center;
 }
+.box-3 p {
+  font-size: 12px;
+  padding: 5px;
+  margin: 0px;
+}
+.box-1 p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 900;
+  color: #1c3c6b;
+}
+.box-3 p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 900;
+  color: #1c3c6b;
+}
+.box-4 p:nth-child(2) {
+  font-size: 18px;
+}
+.box-4 p:nth-child(2) span {
+  font-weight: 900;
+  color: #1c3c6b;
+}
+.box-6 p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 900;
+  color: #1c3c6b;
+}
 .box-3 {
-  width: 300px;
-  border: 1px solid black;
+  width: 280px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  border: 1px solid #dbdde0;
   transform: translate(-9%, 0%);
+}
+.box-4 {
+  width: 150px;
+  height: 80px;
+  padding: 10px 10px;
+  border-radius: 15px 0px 0px 15px;
+  border: 1px solid #dbdde0;
+}
+.box-4 p {
+  font-size: 12px;
+  padding: 5px;
+  margin: 0px;
+}
+.box-5 p {
+  font-size: 12px;
+  padding: 5px;
+  margin: 0px;
+}
+.box-5 {
+  width: 150px;
+  height: 80px;
+  padding: 10px 10px;
+  border-radius: 0px 15px 15px 0px;
+  border: 1px solid #dbdde0;
+}
+.box-6 {
+  width: 150px;
+  margin-left: 20px;
+  height: 80px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  border: 1px solid #dbdde0;
+}
+.box-6 p {
+  font-size: 12px;
+  padding: 5px;
+  margin: 0px;
 }
