@@ -17,8 +17,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 480px;
-  gap: 122px;
+  max-width: 480px;
+  padding: 0px 90px;
+  gap: 64px;
   height: 62px;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
@@ -27,21 +28,26 @@ section {
   top: 25px;
   position: relative;
 }
-
+.card-top-icon {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .card-middle {
   background-color: rgb(255, 255, 255);
-  width: 1180px;
-  height: 192px;
+  max-width: 1169px;
+
+  max-height: 416px;
   border-radius: 20px;
-  padding: 30px;
+  padding: 50px 30px;
 }
 .card-middle-top {
   display: flex;
   align-items: center;
 }
 .card-middle-bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
 }
 .card-middle-bottom-left {
   display: flex;
@@ -166,4 +172,37 @@ section {
   font-size: 12px;
   padding: 5px;
   margin: 0px;
+}
+
+/* Mobile */
+@media (min-width: 300px) and (max-width: 768px) {
+  .card-top {
+    gap: 32px;
+    padding: 0px 38px;
+  }
+  .card-middle-top {
+    justify-content: center;
+  }
+  .card-middle-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-middle-bottom-middle {
+    margin-left: 0px;
+  }
+  .box-1,
+  .box-3 {
+    max-width: 150px;
+  }
+  .box-4,
+  .box-5 {
+    margin: 20px 0px;
+    max-width: 150px;
+  }
+
+  .box-6 {
+    width: 325px;
+    margin-left: 0px;
+  }
 }
