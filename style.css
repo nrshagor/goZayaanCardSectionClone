@@ -180,6 +180,9 @@ section {
     gap: 32px;
     padding: 0px 38px;
   }
+  .card-middle {
+    width: 323px;
+  }
   .card-middle-top {
     justify-content: center;
   }
@@ -191,6 +194,10 @@ section {
   .card-middle-bottom-middle {
     margin-left: 0px;
   }
+  .card-middle-bottom-left {
+    position: relative;
+    left: 8px;
+  }
   .box-1,
   .box-3 {
     max-width: 150px;
@@ -198,11 +205,10 @@ section {
   .box-4,
   .box-5 {
     margin: 20px 0px;
-    max-width: 150px;
+    width: 161px;
   }
-
   .box-6 {
-    width: 325px;
+    width: 343px;
     margin-left: 0px;
   }
 }
